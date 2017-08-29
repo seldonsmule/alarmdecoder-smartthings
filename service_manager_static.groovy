@@ -532,6 +532,6 @@ private String egcConvertIPToHex(String IP){
 
 private String egcConvertIntToHex(int port){
   String hex = Integer.toHexString(port) 
+  return(hex.toUpperCase())
 }
-
 
