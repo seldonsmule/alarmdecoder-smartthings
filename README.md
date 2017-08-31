@@ -17,9 +17,16 @@ This repository provides support for the AlarmDecoder webapp inside of the Smart
 * To use, you must use the supplied apikey_cntl.php script to add a new APIKEY for your use
 
 ## Required software
+* This all assumes that somewhere within your local network the ser2sock server is running and talking to an AlarmDecoder device.  https://github.com/nutechsoftware/ser2sock
 * Assumes a LAMP stack.  To use out of the box, install MAMP https://www.mamp.info/en/downloads
 * Included install.sh script will then configure to the MAMP directory as installed on your Mac.
 
 
-## Known issues
+## Known Issues
 
+## Future Items Planned
+* install.sh also configure httpd.conf file (and extra/httpd-ssl.conf)
+* Daily log rollover
+* HTTPS between Smartthings and Webserver (depends on support from SmartThings)
+* API Key generation at installation
+* Push notifications of zone changes - Allow a new Smartthings device that could act like a motion dector - GOAL :)
