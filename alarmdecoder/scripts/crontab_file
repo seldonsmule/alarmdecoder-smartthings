@@ -1,0 +1,10 @@
+#Put the following at the end of your crontab file then update
+#
+# to get a list of what is running in your crontab type crontab -l
+# to append do the following:
+#
+# crontab -l > tmp.crontab
+# cat crontab_file >> tmp.crontab
+# crontab tmp.crontab
+# check every min if MAMP is running
+* * * * * /Applications/MAMP/bin/egcstart.sh  > $HOME/tmp/egcstartMAMP.out 2>&1

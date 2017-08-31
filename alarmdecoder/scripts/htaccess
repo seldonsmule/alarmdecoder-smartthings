@@ -1,0 +1,6 @@
+# forces everything to go to our index.php file.  
+# got directions from: http://www.brian-driscoll.com/2009/12/building-rest-or-rest-like-lamp-web.html
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-s
+RewriteRule ^(.*)$ /index.php/$1 [L]
